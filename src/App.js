@@ -18,10 +18,10 @@ const App = () => {
         <Header />
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} exact />
           <Route path="/product/:id" element={<ProductDetails />} />
-          <Route path="/cart-details/" element={<CartDetails />} />
-          <Route path="/purchase-history/" element={<PurchaseHistory />} />
+          <Route path="/cart-details" element={<CartDetails />} />
+          <Route path="/purchase-history" element={<PurchaseHistory />} />
           <Route path="/purchase/:index" element={<PurchaseDetails />} />
         </Routes>
         <Footer />
